@@ -11,6 +11,7 @@ urlpatterns = [
 url(r'^comment/(?P<pk>\d+)/remove/$', views.comment_remove, name='comment_remove'),
 ]
 
+
 # ^ : 문자열이 시작할 때
 # $ : 문자열이 끝날 때
 # \d : 숫자
