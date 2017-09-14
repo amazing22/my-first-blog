@@ -1,4 +1,6 @@
 #!/usr/bin/env python
+# 사이트 관리를 도와주는 역활
+
 import os
 import sys
 

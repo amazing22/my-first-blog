@@ -6,4 +6,16 @@ urlpatterns = [
     url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),
     url(r'^post/new/$', views.post_new, name='post_new'),
     url(r'^post/(?P<pk>\d+)/edit/$', views.post_edit, name='post_edit'),
+    url(r'^post/(?P<pk>\d+)/comment/$', views.add_comment_to_post, name='add_comment_to_post'),
+    url(r'^comment/(?P<pk>\d+)/approve/$', views.comment_approve, name='comment_approve'),
+url(r'^comment/(?P<pk>\d+)/remove/$', views.comment_remove, name='comment_remove'),
 ]
+
+# ^ : 문자열이 시작할 때
+# $ : 문자열이 끝날 때
+# \d : 숫자
+# () : 패턴의 부분을 저장할 때
+# ^post/ : url이(오른쪽부터) post/로 시작한다.
+# (\ㅇ+) : 숫자가 있는데 이 숫자로 조회하고 찾을 수 있다.
+# / : / 뒤에 문자가 있다.
+# $ : url마지막이 / 로 끝난다.

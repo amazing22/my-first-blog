@@ -30,6 +30,8 @@ ALLOWED_HOSTS = ['localhost', '127.0.0.1', '.pythonanywhere.com']
 
 # Application definition
 
+# 어플리케이션을 생성한 후 장고에 사용한다고 알려주기 위해
+# blog 추가하기.
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -106,6 +108,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'ko'
 
+# 웹사이트에 정확한 현재시간을 넣는다.(한국 시간)
 TIME_ZONE = 'Asia/Seoul'
 
 USE_I18N = True
@@ -118,5 +121,6 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
+# 정적파일 경로
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
