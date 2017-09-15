@@ -19,7 +19,6 @@ h1 a{
     font-family: 'Nanum Pen Script', serif;
     color: brown;
 }
-
 .page-header {
     background-color: #BFA283;
     margin-top: 0;
@@ -47,7 +46,4 @@ h1 a{
     float: right;
     font-size: 26pt;
     margin-right: 20px;
-}
-.comment {
-    margin: 20px 0px 20px 20px;
 }
