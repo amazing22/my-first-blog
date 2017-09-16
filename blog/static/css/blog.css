@@ -24,6 +24,11 @@ h1 a{
     color: brown;
     font-weight: bold;
 }
+.postdetail h1 a, .postdetail h1 a:visited {
+    font-family: 'Nanum Pen Script', serif;
+    color: brown;
+    font-weight: bold;
+}
 .page-header {
     background-color: #E8CCA0;
     margin-top: 0;
