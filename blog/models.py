@@ -12,7 +12,7 @@ from django.utils import timezone
 # models.TextField - 글자 수에 제한이 없는 긴 텍스트를 위한 속성, 블로그 콘텐츠를 담기좋다.
 # models.DateTimeField - 날짜와 시간을 의미한다.
 # models.ForeignKey - 다른 모델에 대한 링크 의미
-class Post(models.Model):
+class Post(models.Model): # class Post(models.Model) : 부모 클래스
     author = models.ForeignKey('auth.User')
     title = models.CharField(max_length=200)
     text = models.TextField()
