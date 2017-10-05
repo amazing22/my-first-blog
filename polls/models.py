@@ -20,6 +20,8 @@ class Question(models.Model):
     list_filter = ['pub_date']
     search_fields = ['question_text']
 
+
+
 class Choice(models.Model):
     question = models.ForeignKey(Question, on_delete=models.CASCADE)
     choice_text = models.CharField(max_length=200)
