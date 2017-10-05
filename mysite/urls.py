@@ -8,6 +8,7 @@ urlpatterns = [
     url(r'^accounts/login/$', views.login, name='login'), # 추가
     url(r'^accounts/logout/$', views.logout, name='logout', kwargs={'next_page': '/'}), # 추가
     url(r'', include('blog.urls')),
+    url(r'^polls/', include('polls.urls')),
 ]
 
 
