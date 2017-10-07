@@ -36,6 +36,7 @@ ALLOWED_HOSTS = ['localhost', '127.0.0.1', '.pythonanywhere.com']
 # 어플리케이션을 생성한 후 장고에 사용한다고 알려주기 위해
 # blog 추가하기.
 INSTALLED_APPS = [
+    'polls.apps.PollsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -43,7 +44,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog',
-    'polls.apps.PollsConfig',
 ]
 
 MIDDLEWARE = [
